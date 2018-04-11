@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Пробный вариант: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="less.js" type="text/javascript"></script>
+  </head>
+    <body>
+    <header class="page-header container">
+      <h1 class="visually-hidden">Седона - место, где стоит побывать</h1>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <buttom class="main-nav__toggle enter" type="button">Открыть меню</buttom>
+            <buttom class="main-nav__toggle exit" type="button">Свернуть меню</buttom>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__items">
+            <li class="main-nav__item "><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+                    <li class="main-nav__item logo"><a href="#">
+                        <picture>
+                          <source media="(min-width: 1200px)"
+                            srcset="img/logotype-desktop.png">
+                          <img src="img/logotyle-mobile.png" width="102" height="83" alt="Седона">
+                        </picture>
+                    </a></li>
+            <li class="main-nav__item main-nav__item--active"><a>Форма отзыва</a></li>
+            <li class="main-nav__item"><a href="">HTML ACADEMY</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="photo-main-picture">
+      <picture class="main-picture__fon">
+        <source media="(min-width: 1200px)"
+            srcset="img/photo-back-desktop.jpg">
+        <source media="(min-width: 768px)"
+            srcset="img/photo-back-tablet.jpg">
+        <img src="img/photo-back-mobile.jpg" width="320" height="389" alt="Седона">
+      </picture>
+      <div class="main-picture__logo">
+        <picture class="main-picture__logo">
+          <source media="(min-width: 1200px)"
+              srcset="img/SEDONA-desktop.png">
+          <source media="(min-width: 768px)"
+              srcset="img/SEDONA-tablet.png">
+          <img src="img/SEDONA-mobile.png" width="229" height="39" alt="Седона">
+        </picture>
+      </div>
+    </div>
+
+    <section class="page-main page-main--inner container form-presentation ">
+      <span class="photo-presentation__slogan">Оставьте свой отзыв</span>
+      <p class="photo-presentation__entry">Помогите нашим отелям стать лучше! Оставьте свой отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </section>
+
+      <form action="https://barbershop.ru" method="get">
+        <div class="form__bio">
+          <h2>Представьтесь<span class="bio__span">, пожалуйста</span>:</h2>
+          <fieldset class="client-id">
+            <label for="name">Имя:</label>
+              <input class="client-id__name" type="text" id="name" placeholder="Петр"><br>
+            <label for="surname">Фамилия:</label>
+              <input class="client-id__surname" type="text" id="surname" placeholder="Иванов"><br>
+            <label for="patronymic">Отчество:</label>
+              <input class="client-id__patronymic" type="text" placeholder="Александрович" id="patronymic"><br>
+          </fieldset>
+        </div>
+        <div class="form__contacts">
+          <h2>Контактная информация:</h2>
+          <fieldset class="client-id">
+            <legend>Контактная информация:</legend>
+            <div class="client-id__ph">
+              <label for="phone"><span>Контактный </span>телефон:</label>
+              <input class="client-id__phone" type="text" placeholder="Введите телефон" id="phone">
+              <img src="img/phone.png" width="18" height="18" alt="Трубка"> 
+            </div>
+            <div class="client-id__m">
+              <label for="surname">Электронная почта:</label>
+              <input class="client-id__mail" type="text" id="mail" placeholder="Введите e-mail">
+              <img src="img/mail.png" width="16" height="12" alt="Конверт"> 
+            </div>
+          </fieldset>
+        </div>
+        <div class="form__impression">
+          <fieldset class="impression">
+            <h2>Ваше общее впечатление:</h2>
+            <div>   
+              <input type="radio" name="type-of-impression" value="1" id="positive" checked>
+              <label class="impression__option" for="positive"><span></span>
+                Скорее положительное
+              </label>
+            </div>
+            <div>
+              <input type="radio" name="type-of-impression"  value="2" id="negative">
+              <label class="impression__option" for="negative"><span></span>
+                Скорее отрицательное          
+              </label>
+            </div>
+            <div>
+              <input type="radio" name="type-of-impression" value="3" id="inconveniently">
+              <label class="impression__option" for="inconveniently"><span></span>
+                Затрудняюсь ответить          
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form__landmarks">
+          <fieldset class="landmarks__fieldset">
+            <legend>Посещенные достопримечательности:</legend>
+            <h2>Посещенные достопримечательности:</h2>
+            <div class="landmarks">
+            <div>
+              <input type="checkbox" name="landmarks__bridge-of-devol" id="service-1"checked>
+              <label for="service-1"><span></span>Мост Дьявола</label>
+            </div>
+            <div>
+              <input type="checkbox" name="landmarks__slide-park" id="service-2"checked>
+              <label for="service-2"><span></span>Слайд-парк</label>
+            </div>
+            <div>
+              <input type="checkbox" name="landmarks__moutain-bell" id="service-3">
+              <label for="service-3"><span></span>Гора-Колокол</label>
+            </div>
+            <div>
+              <input type="checkbox" name="landmarks__red-rocks" id="service-4" checked>
+              <label for="service-4"><span></span>Красные скалы</label>
+            </div>
+          </div>
+          </fieldset>
+        </div> 
+        <div class="form__emotion">
+          <fieldset>
+            <legend>Опишите свои эмоции:</legend>
+            <h2>Опишите свои эмоции:</h2>
+            <textarea name="emotion" id="emotion" cols="23" rows="7" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+        </div> 
+        <div class="choice-services">
+          <a>Отправить отзыв</a>
+          <p class="choise-services__attention">* - Обязательные поля</p>
+        </div>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+      <p class="page-footer__hashtag">#vizitsedona</p>
+      <span class="footer__social-links">
+        <a class="social-link social-link--tw" href="https://vk.com/rancidpunx">Мы в Твитере<img src="img/icon-twitter.png" width="18" height="14"></a>
+        <a class="social-link social-link--fb" href="https://www.facebook.com/rancid">Мы в Фейсбуке<img src="img/icon-facebook.png" width="9" height="18"></a>
+        <a class="social-link social-link--youtb" href="https://www.instagra.com/rancid">Мы в Ютубе<img src="img/icon-youtube.png" width="20" height="14"></a>
+      </span>
+      <p class="page-footer__copyright">Разработано<img src="img/htmlacademy.png" width="27" height="34" alt="HTML ACADEMY"></p>
+    </footer>
+  </body>
+</html>
