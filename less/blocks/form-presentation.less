@@ -1,0 +1,50 @@
+.form-presentation {
+	padding: 40px 0;
+	text-align: center;
+
+	span {
+		display: block;
+		font-size: 18px;
+		font-weight: bold;
+		text-transform: uppercase;
+		width: 280px;
+		margin: 0 auto;
+	}
+
+	p {
+		display: block;
+		font-size: 14px;
+		text-transform: uppercase;
+		width: 225px;
+		margin: 0 auto;
+		margin-top: 35px;
+	}
+}
+
+@media @mobile-widths-only {
+	.form-presentation {
+		p {
+			br {
+				display: none;
+			}
+		}
+	}
+}
+
+@media @tablet-widths {
+
+	.form-presentation {
+
+		span {
+			font-size: 24px;
+		}
+
+		.photo-presentation__entry {
+			width: 385px;
+		}
+	}
+}
+
+@media @desktop-widths {
+
+}
